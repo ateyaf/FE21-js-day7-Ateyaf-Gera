@@ -1,60 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Code Review 1</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header id="header">
-      <h3>Gergely Izsák - Front-End Web Developer</h3>
-      <img src="img\logo.png" alt="Code Factory Logo" />
-    </header>
-    <nav id="nav">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="aboutMe.html">About me</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <main>
-      <div class="container container1">
-        <h1>
-          This is my first<br />
-          website :D
-        </h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Review 1</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="media.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <header id="header">
+    <h3>Gergely Izsák - Front-End Web Developer</h3>
+    <img src="img\logo.png" alt="Code Factory Logo" />
+  </header>
+  <nav id="nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="aboutMe.html">About me</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img\Phone.png" alt="Mobile phone" /></div>
+        <div class="swiper-slide"><img src="img\Debit_card_ATM.jpg" alt="Debit card" /></div>
+        <div class="swiper-slide"><img src="img\Taxify-Scooters.jpg" alt="Scooter" /></div>
       </div>
-      <div class="container container2">
-        <img src="img\Phone.png" alt="Mobile phone" />
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+    <div class="container container1">
+      <h1>
+        This is my first<br />
+        website :D
+      </h1>
+    </div>
+    <div class="container container2">
+      <img src="img\Phone.png" alt="Mobile phone" />
+      <p>
+        Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!
+      </p>
+    </div>
+    <div class="container container3">
+      <div class="small1">
+        <img src="img\Debit_card_ATM.jpg" alt="Debit card" />
         <p>
-          Samsung Galaxy S11/S20 Plus video leaks showing phone in real life!
+          Police are investigating three ATM explosions in two Florida
+          countries
         </p>
       </div>
-      <div class="container container3">
-        <div class="small1">
-          <img src="img\Debit_card_ATM.jpg" alt="Debit card" />
-          <p>
-            Police are investigating three ATM explosions in two Florida
-            countries
-          </p>
-        </div>
-        <div class="small2">
-          <img src="img\Taxify-Scooters.jpg" alt="Scooter" />
-          <p>E-scooter firm Bolt pulls out of 12 cities</p>
-        </div>
+      <div class="small2">
+        <img src="img\Taxify-Scooters.jpg" alt="Scooter" />
+        <p>E-scooter firm Bolt pulls out of 12 cities</p>
       </div>
-    </main>
-    <footer id="footer">
-      <img src="img\logo.png" alt="Code Factory Logo" />
-      <p><small>Gergely Izsak - Codefactory 2021</small></p>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer id="footer">
+    <img src="img\logo.png" alt="Code Factory Logo" />
+    <p><small>Gergely Izsak - Codefactory 2021</small></p>
+  </footer>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
