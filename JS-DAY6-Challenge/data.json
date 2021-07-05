@@ -1,0 +1,63 @@
+let cars = `
+[
+    {
+        "carName": "BMW",
+        "carProduction" : "1998",
+        "carImage" : "https://i.auto-bild.de/ir_img/1/9/9/0/4/2/1/Mini-John-Cooper-Works-GP-Concept-2017-Alle-Infos-und-Bilder-474x316-5e03a61470ab0ec7.jpg", 
+        "carPrice" : "10000"
+    },
+    {
+        "carName": "Tesla",
+        "carProduction": "1993",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "9000"
+    },
+    {
+        "carName": "VW",
+        "carProduction": "1999",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "8000"
+    },
+    {
+        "carName": "Ferrari",
+        "carProduction": "1978",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "8000"
+    },
+    {
+        "carName": "Mercedes",
+        "carProduction": "1957",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "9000"
+    },
+    {
+        "carName": "Nissan",
+        "carProduction": "1968",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "7000"
+    },
+    {
+        "carName": "Fiat",
+        "carProduction": "1978",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "5000"
+    },
+    {
+        "carName": "Seat",
+        "carProduction": "1968",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "7000"
+    },
+    {
+        "carName": "Lada",
+        "carProduction": "1968",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "5000"
+    },
+    {
+        "carName": "Skoda",
+        "carProduction": "1989",
+        "carImage": "https://s1.cdn.autoevolution.com/images/models/MINI_Mini-3-door-2021_main.jpg",
+        "carPrice": "7000"
+    }
+]`
